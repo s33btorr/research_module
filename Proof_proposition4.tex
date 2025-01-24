@@ -1,0 +1,85 @@
+\documentclass[12pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+
+\usepackage{amsmath}
+
+%SetFonts
+
+%SetFonts
+
+
+\title{Brief Article}
+\author{The Author}
+%\date{}							% Activate to display a given date or no date
+
+\begin{document}
+%\maketitle
+%\section{}
+%\subsection{}
+
+\section*{Introduction to Proposition 4}
+The authors want to identify circumstances under which naivete-based discrimination is Pareto-damaging—a possibility that never obtains in basic models of preference-based discrimination. They consider perfect naivete-based discrimination (\( \alpha_{n} \) = 1, \( \alpha_{s} \) = 0) under homogeneous distortions and imperfect competition (low t). Due to the incentive to compete for profitable consumers, an increase in \( \alpha \) leaves firms’ equilibrium profits unchanged. In this case, there is only cross-subsidy between the two types of consumers. Then, naivete-based discrimination (\(\alpha_{n} \), \( \alpha_{s}) \) also leaves firms’ profits unchanged. In addition, Corollary 1 implies that perfect naivete-based discrimination (\( \alpha_{n} \) = 1, \( \alpha_{s} \) = 0) makes all sophisticated consumers worse off. Proposition 4 is needed to complete the picture: let's check how naivete-based discrimination affects naive consumers.
+
+\section*{Proposition 4 and Proof}
+
+\textbf{Proposition 4}  
+
+Suppose that the market features a homogeneous distortion, and \( v > t + c \):  
+\begin{enumerate}
+    \item If \( k''(a(\alpha))a(\alpha) < 1 \) for all \( \alpha \), then for any \( \alpha_{ns} \), perfect naivete-based discrimination strictly lowers the welfare of naive consumers.
+    \item If there is a \( \underline{\alpha}  \) such that \( k''(a(\alpha))a(\alpha) > 1 \) for all \( \alpha > \underline{\alpha} \), then for any \( \alpha_{ns} > \underline{\alpha} \), perfect naivete-based discrimination strictly raises the welfare of naive consumers.
+\end{enumerate}
+
+\textbf{Proof}  
+
+For \( t < v - c \), the proof of Proposition 1 establishes that:
+\[
+f(\alpha) = c + t - \big[\alpha a(\alpha) - k(a(\alpha))\big].
+\]
+The equilibrium welfare of naive consumers gross of transportation cost is thus:
+\[
+U_{n} (\alpha) = v - f(\alpha) - a(\alpha) = v - c - t - (1 - \alpha)a(\alpha) - k(a(\alpha)).
+\]
+Hence, perfect naivete-based discrimination hurts naive consumers if and only if:
+\[
+U_{n} (\alpha) > U_{n} (1) 
+\]
+Therefore, if and only if:
+\[
+(1 - \alpha)a(\alpha) + k(a(\alpha)) < k(a(1)).
+\]
+Let:
+\[
+K(\alpha) = (1 - \alpha)a(\alpha) + k(a(\alpha)).
+\]
+Using the fact that \( k'(a(\alpha)) = \alpha \) and \( a'(\alpha) = \frac{1}{k''(a(\alpha))} \), we can compute:
+\[
+\frac{dK(\alpha)}{d\alpha} = a'(\alpha) - (\alpha a'(\alpha) + a(\alpha)) + k'(a(\alpha)) a'(\alpha) = -a(\alpha) + \frac{1}{k''(a(\alpha))}.
+\]
+This implies that:
+\[
+\frac{dK(\alpha)}{d\alpha} > 0 \quad \text{if and only if} \quad a(\alpha)k''(a(\alpha)) < 1.
+\]
+Hence, if \( a(\alpha)k''(a(\alpha)) < 1 \) for all \( \alpha \), \( K(\alpha) < K(1) \), and thus naive consumers are hurt by perfect discrimination. This proves statement (i).  
+
+Similarly, in the case where \( a(\alpha)k''(a(\alpha)) > 1 \) for all \( \alpha \in (\underline{\alpha}, 1) \), one has \( K(\alpha) > K(1) \) for all \( \alpha \in (\underline{\alpha}, 1) \). In this case, naive consumers benefit from perfect discrimination. This proves statement (ii).
+
+\section*{Intuition}
+On the one hand, perfect discrimination eliminates the cross-subsidy from naive to sophisticated consumers, benefiting naive
+consumers. On the other hand, perfect discrimination leads firms to increase the additional price for naive consumers, hurting naive consumers. The net effect is in general ambiguous, and the latter effect dominates if and only if the \textbf{proportional responsiveness of the additional price} to \( \alpha \) is sufficiently high. This responsiveness is:
+\[
+ \frac{a'(\alpha)}{a(\alpha)} =  \frac{1}{k''(a(\alpha)) a(\alpha)}
+\]
+giving rise to the conditions in the proposition.
+
+
+
+FROM HERE OUR RESULTS UNDER IMPERFECT COMPETITION????
+
+\end{document}  
